@@ -5,8 +5,12 @@ import os
 import subprocess
 import shutil
 import py7zr
-import PipReqs
 import sys
+
+try:
+    import PipReqs
+except ImportError:
+    from KPTE import PipReqs
 
 def KPTE():
     cmd_input = argparse.ArgumentParser(description='KaixinPyToExe 帮助:')
