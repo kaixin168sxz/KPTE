@@ -1,4 +1,4 @@
-# --$KaixinPyToExePackage>1.3.7$-- #
+# --$KaixinPyToExePackage>1.3.9$-- #
 # Produced by Kaixin(SongXinZhe, 宋昕哲) #
 # Time: 2023.9.28 #
 # Region: China, 中国 #
