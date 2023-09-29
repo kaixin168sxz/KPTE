@@ -10,10 +10,8 @@ try:
     import PipReqs
 except ImportError:
     from KPTE import PipReqs
-Run = True
 
-
-def KPEC(Path, Files=None, OutPut=None, Icon=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Data\icon.ico'), Name=None, Cmd='c', Type='cmd', PipFile=None): 
+def KPEC(Path, Files=None, OutPut=None, Icon=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Data\icon.ico'), Name=None, Cmd='c', Type='cmd'): 
     global Type_, Run
     Type_ = Type
     if Files is None:
@@ -98,9 +96,8 @@ import subprocess
 Path = os.path.dirname(os.path.abspath("."))
 os.chdir(fr'{{Path}}\dist\Code')
 
-subprocess.run(fr'..\Python\python.exe -u .\{Name}.py', shell=True)
+subprocess.Popen(fr'..\Python\python.exe -u .\{Name}.py', shell=True)
 """
-
     print('生成运行文件')
 
     with open(PyPath, 'w') as PyFile:
